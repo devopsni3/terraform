@@ -1,10 +1,10 @@
 provider "aws" {
-  region     = "ap-south-1"
+  region = "us-west-2"  # Update with your desired AWS region
 }
 
+resource "aws_instance" "example" {
+  ami           = "ami-0c94855ba95c71c99"  # Replace with your desired AMI ID
+  instance_type = "t2.micro"                # Replace with your desired instance type
 
-resource "aws_instance" "ourfirst" {
-  ami           = "ami-0447a12f28fddb066"
-  instance_type = "t2.micro"
+
 }
-
